@@ -1,0 +1,13 @@
+package Core;
+
+public class ChequingAccount extends Account{
+	
+	@Override
+	public void printBalance() {
+		System.out.println("=== Chequing Account Balance ===");
+		System.out.println(String.format("Institution: %d", super.institutionNumber));
+		System.out.println(String.format("Transit Number: %d", super.transitNumber));
+		System.out.println(String.format("Account Number: %d", super.accountNumber));
+		System.out.println(String.format("Balance: %d", super.balance));
+	}
+}

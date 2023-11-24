@@ -1,0 +1,62 @@
+package Core;
+
+public abstract class Account implements IAccount{
+
+	private static int INSNUMBERSTANDARD = 003;
+	private static int SEQUENCIAL = 1;
+	
+	protected int accountNumber;
+	protected int institutionNumber;
+	protected int transitNumber;
+	protected double balance;
+	
+
+	
+	public Account() {
+		this.institutionNumber = Account.INSNUMBERSTANDARD;
+		this.institutionNumber = SEQUENCIAL++;
+	}
+	
+	@Override
+	public void withdraw(double amount) {
+		// TODO Auto-generated method stub
+		this.balance = balance - amount;
+	}
+
+	@Override
+	public void deposit(double amount) {
+		// TODO Auto-generated method stub
+		this.balance = balance + amount;
+	}
+
+	@Override
+	public void transfer(double amount, Account toAccount) {
+		// TODO Auto-generated method stub
+		this.withdraw(amount);
+		toAccount.deposit(amount);
+	}
+	
+	protected void printCommonInformation() {
+		System.out.println(String.format("Institution: %d", institutionNumber));
+		System.out.println(String.format("Transit Number: %d", transitNumber));
+		System.out.println(String.format("Account Number: %d", accountNumber));
+		System.out.println(String.format("Balance: %d", balance));
+	}
+	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public int getInstitutionNumber() {
+		return institutionNumber;
+	}
+
+	public int getTransitNumber() {
+		return transitNumber;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+}

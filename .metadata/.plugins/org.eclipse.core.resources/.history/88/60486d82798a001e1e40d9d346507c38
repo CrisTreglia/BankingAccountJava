@@ -1,0 +1,11 @@
+package Core;
+
+public class ChequingAccount extends Account{
+	
+	@Override
+	public void printBalance() {
+		System.out.println("=== Chequing Account Balance ===");
+		printCommonInformation();
+	}
+
+}

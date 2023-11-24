@@ -1,0 +1,10 @@
+package Core;
+
+public class SavingsAccount extends Account{
+	
+	@Override
+	public void printBalance() {
+		System.out.println("=== Savings Account Balance ===");
+		super.printCommonInformation();
+	}
+}

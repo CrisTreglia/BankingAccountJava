@@ -1,0 +1,9 @@
+package Core;
+
+public class Main {
+
+	Account chqAcc = new ChequingAccount();
+	Account savAcc = new SavingsAccount();
+	
+	
+}

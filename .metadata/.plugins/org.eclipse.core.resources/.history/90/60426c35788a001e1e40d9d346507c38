@@ -1,0 +1,54 @@
+package Core;
+
+public abstract class Account implements IAccount{
+
+	private static int INSNUMBERSTANDARD = 003;
+	private static int SEQUENCIAL = 1;
+	
+	protected int accountNumber;
+	protected int institutionNumber;
+	protected int transitNumber;
+	protected double balance;
+	
+
+	
+	public Account() {
+		this.institutionNumber = Account.INSNUMBERSTANDARD;
+		this.institutionNumber = SEQUENCIAL++;
+	}
+	
+	@Override
+	public void withdraw(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deposit(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void transfer(Account toAccount) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public int getInstitutionNumber() {
+		return institutionNumber;
+	}
+
+	public int getTransitNumber() {
+		return transitNumber;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+}

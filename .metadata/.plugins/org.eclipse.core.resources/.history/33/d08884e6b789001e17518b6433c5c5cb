@@ -1,0 +1,14 @@
+package Core;
+
+public class ChequingAccount extends Account{
+	
+	private static int SEQUENCIAL = 1;
+	private static int instNumberStandard = 003;
+	
+	public ChequingAccount() {
+		
+		super.institutionNumber = instNumberStandard;
+		super.institutionNumber = SEQUENCIAL++;
+		
+	}
+}

@@ -1,0 +1,21 @@
+package Core;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Customer cristofer = new Customer();
+		cristofer.setName("Cristofer");
+		
+		Account chqAcc = new ChequingAccount(cristofer);
+		Account savAcc = new SavingsAccount(cristofer);
+		
+		chqAcc.deposit(100);
+		
+		chqAcc.transfer(0, savAcc);
+		
+		chqAcc.printBalance();
+		savAcc.printBalance();
+	}
+
+}

@@ -1,0 +1,15 @@
+package Core;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Account chqAcc = new ChequingAccount();
+		Account savAcc = new SavingsAccount();
+		
+		chqAcc.deposit(100);
+		chqAcc.printBalance();
+		savAcc.printBalance();
+	}
+
+}

@@ -1,0 +1,39 @@
+package Core;
+
+public class ChequingAccount {
+	
+	private int accountNumber;
+	private int institutionNumber;
+	private int transitNumber;
+	private double balance;
+	
+	
+	public void withdraw() {
+		
+	}
+	
+	public void deposit() {
+		
+	}
+	
+	public void transfer() {
+		
+	}
+	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public int getInstitutionNumber() {
+		return institutionNumber;
+	}
+
+	public int getTransitNumber() {
+		return transitNumber;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+}

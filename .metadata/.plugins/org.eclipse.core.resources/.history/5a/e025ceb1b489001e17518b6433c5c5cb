@@ -1,0 +1,23 @@
+package Core;
+
+public class SavingsAccount {
+	
+	public int accountNumber;
+	public int institutionNumber;
+	public int transitNumber;
+	public double balance;
+	
+	
+	public void withdraw() {
+		
+	}
+	
+	public void deposit() {
+		
+	}
+	
+	public void transfer() {
+		
+	}
+
+}
